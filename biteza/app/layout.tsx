@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Manrope } from "next/font/google";
 import "./globals.css";
+import { BottomNav } from "@/components/bottom-nav";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-heading",
@@ -21,8 +22,6 @@ export const metadata: Metadata = {
 export const viewport = {
   themeColor: "#f7f7f2",
 };
-
-import { BottomNav } from "@/components/bottom-nav";
 
 export default function RootLayout({
   children,
