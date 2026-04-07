@@ -22,6 +22,8 @@ export const viewport = {
   themeColor: "#f7f7f2",
 };
 
+import { BottomNav } from "@/components/bottom-nav";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,6 +37,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-sans bg-background text-foreground">
         {children}
+        <BottomNav />
       </body>
     </html>
   );
